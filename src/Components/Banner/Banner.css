@@ -1,8 +1,8 @@
 .banner{
-    background-image:url("https://wallpaperaccess.com/full/2703652.png");
     background-size: cover;
-    height: 448px;
+   height: 448px;
     color: #fff;
+    overflow: hidden;
 }
 .content{
     padding-top: 140px;

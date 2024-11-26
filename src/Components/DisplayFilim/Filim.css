@@ -1,0 +1,96 @@
+.netflix-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    background-color: #e50914;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .highlighted-movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .movie-poster {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+  }
+  
+  .movie-details {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .movie-details h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .movie-details p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .play-button,
+  .watchlist-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .play-button {
+    background-color: #e50914;
+    color: white;
+  }
+  
+  .watchlist-button {
+    background-color: #333;
+    color: white;
+  }
+  
+  .recommendations {
+    margin-top: 20px;
+  }
+  
+  .recommendations h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .thumbnails {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .thumbnail {
+    width: 150px;
+    border-radius: 5px;
+  }
+  
+  .footer {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }

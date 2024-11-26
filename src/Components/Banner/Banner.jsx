@@ -8,7 +8,6 @@ function Banner() {
     const randomMovie = ()=>{
           let x = Math.floor(Math.random() * 19);
       axios.get(`/trending/all/week?api_key=${api_key}&language=en-US`).then((res)=>{
-       // console.log(res.data.results);
         setMovie(res.data.results[x])
       })
     }
@@ -19,24 +18,6 @@ function Banner() {
   return ()=> clearInterval(interval)
   },[])
   
-  /* function Banner() {
-  const [movie,setMovie] = useState()
-  useEffect(()=>{
-    let x = Math.floor((Math.random() * 19));
-      console.log(x);
-      axios.get(`/trending/all/week?api_key=${api_key}&language=en-US`).then((res)=>{
-       // console.log(res.data.results);
-        setMovie(res.data.results[x])
-      })
-    setInterval(()=>{
-      let x = Math.floor((Math.random() * 19));
-      console.log(x);
-      axios.get(`/trending/all/week?api_key=${api_key}&language=en-US`).then((res)=>{
-       // console.log(res.data.results);
-        setMovie(res.data.results[x])
-      })
-    },10000)
-  },[]) */
   return (
     
     <div

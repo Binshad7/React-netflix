@@ -1,19 +1,30 @@
 import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import Filim from './Components/DisplayFilim/Filim';
 import './App.css';
-import {Originals,action} from './urls'
-import NavBar from './Components/NavBar/NavBar';
-import Banner from './Components/Banner/Banner';
-import RowPost from './Components/RowPost/RowPost';
+import  MoviesOrginals from './context/MoviesOrginals';
+import  MoviesAction from './context/MoviesAction';
 
 
 function App() {
   return (
     <div className="App">
-    <NavBar/>
-    <Banner/>
-    <RowPost url={Originals} title="Netflix Originals"/>
-    <RowPost url={action} title="Action" isSmall/>
-    
+      
+
+   <MoviesAction>
+    <MoviesOrginals>
+        <BrowserRouter>
+          <Routes>
+
+            <Route path='/' element={<Home />} />
+            <Route path='/DisplayDetails/:type/:filimID' element={<Filim />} />
+
+          </Routes>
+        </BrowserRouter>
+
+    </MoviesOrginals>
+   </MoviesAction>
     </div>
   );
 }

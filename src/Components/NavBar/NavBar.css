@@ -19,3 +19,29 @@
     right: 20px;
     width: 30px;
 }
+.div-search{
+    position: absolute;
+    right: 245px;
+}
+.search{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    padding-left: 10px;
+    background: blanchedalmond;
+}
+.search::placeholder{
+    margin-left: 40px;
+   
+    padding: 30px;
+}
+.search-btn{
+    background-color: red;
+    padding: 10px;
+    border-radius: 9px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    margin-left: 10px;
+}

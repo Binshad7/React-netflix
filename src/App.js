@@ -4,10 +4,10 @@ import Home from './pages/Home'
 import Play from './pages/Play'
 import MovieDiplay from './pages/MovieDiplay';
 import Footer from './Components/Footer/Footer';
+import Search from './pages/Search';
 import './App.css';
-import  MoviesOrginals from './context/MoviesOrginals';
-import  MoviesAction from './context/MoviesAction';
-import  SearchContext from './context/searchContext';
+
+import ProductID from './context/ProductID';
 
 
 function App() {
@@ -15,24 +15,21 @@ function App() {
     <div className="App">
       
 
-   <MoviesAction>
-    <MoviesOrginals>
-     <SearchContext>
 
 
+     <ProductID>
         <BrowserRouter>
           <Routes>
 
             <Route path='/' element={<Home />} />
-            <Route path='/DisplayDetails/:type/:filimID' element={<MovieDiplay />} />
-            <Route path='/play/:movieID' element={<Play />} />
-
+            <Route path='/DisplayDetails' element={<MovieDiplay />} />
+            <Route path='/play' element={<Play />} />
+            <Route path='/search' element={<Search/>}/>
           </Routes>
         </BrowserRouter>
       <Footer/>
-     </SearchContext>
-    </MoviesOrginals>
-   </MoviesAction>
+     </ProductID>
+     
     </div>
   );
 }

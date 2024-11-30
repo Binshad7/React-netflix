@@ -1,8 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState,useContext } from 'react'
 import {api_key,imgUrl} from '../../constants/constants'
+import { ProductContext } from '../../context/ProductID'
 import './Banner.css'
 import axios from '../../axois'
+import { useNavigate } from 'react-router-dom'
 function Banner() {
+  const {handleProduct} = useContext(ProductContext)
+  const navigate =    useNavigate()
   const [movie,setMovie] = useState()
   useEffect(()=>{
     const randomMovie = ()=>{
@@ -14,10 +18,16 @@ function Banner() {
   randomMovie();
 
   const interval = setInterval(randomMovie,60000)
-
+ 
   return ()=> clearInterval(interval)
+
   },[])
   
+ const onHandle = ()=>{
+   handleProduct(movie)
+   navigate('/play')
+ }
+
   return (
     
     <div
@@ -27,7 +37,7 @@ function Banner() {
       <div className="content">
         <h1 className="title"> {movie ? movie.title :""}</h1>
         <div className="banner_buttons">
-            <button className='button'>Play</button>
+            <button className='button' onClick={onHandle}>Play</button>
             <button className='button'>My list</button>
         </div>
         <h1 className="description">{movie ? movie.overview : ""}</h1>

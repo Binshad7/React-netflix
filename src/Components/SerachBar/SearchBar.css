@@ -1,0 +1,42 @@
+
+  
+  .app {
+    text-align: center;
+  }
+  
+  .search-bar {
+    padding: 20px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .search-bar input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #f40612;
+  }
+  .back-btn{
+    color: #FFF;
+    position: absolute;
+    left: 65px;
+    top: 24px;
+  }
+  .loader{
+    color: #fff;
+  }

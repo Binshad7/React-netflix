@@ -2,47 +2,47 @@ import React from 'react'
 import './Footer.css'
 function Footer() {
     return (
-        <div class="footer">
+        <div className="footer">
         
 
-        <div class="call">
+        <div className="call">
             <h4>Questions? Call</h4>
-            <a>000-800-919-1694</a>
+            <p>000-800-919-1694</p>
         </div>
 
-       <div class="end">
+       <div className="end">
 
-            <div class="one">
-                <a>FAQ</a>
-                <a>Investor Relations</a>
-                <a>Privacy</a>
-                <a>Speed Test</a>
+            <div className="one">
+                <p>FAQ</p>
+                <p>Investor Relations</p>
+                <p>Privacy</p>
+                <p>Speed Test</p>
             </div>
 
-            <div class="two">
-                <a>Help Center</a>
-                <a>Jobs</a>
-                <a>Cookie Preferences</a>
-                <a>Legal Notices</a>
+            <div className="two">
+                <p>Help Center</p>
+                <p>Jobs</p>
+                <p>Cookie Preferences</p>
+                <p>Legal Notices</p>
             </div>
 
-            <div class="three">
-                <a>Account</a>
-                <a>Ways to Watch</a>
-                <a>Corporate Information</a>
-                <a>Only on Netflix</a>
+            <div className="three">
+                <p>Account</p>
+                <p>Ways to Watch</p>
+                <p>Corporate Information</p>
+                <p>Only on Netflix</p>
             </div>
 
-            <div class="four">
-                <a>Media Centre</a>
-                <a>Terms of Use</a>
-                <a>Contact Us</a>
+            <div className="four">
+                <p>Media Centre</p>
+                <p>Terms of Use</p>
+                <p>Contact Us</p>
             </div>
 
         </div>
         <button id="lang-select2">
             {/* <img src="images/Language icon.svg"/> */}
-        <select class="select">
+        <select className="select">
             <option>English</option>
             <option>हिंदी</option>
         </select>
